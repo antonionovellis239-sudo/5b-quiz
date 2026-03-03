@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <title>Rimandato</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <div class="fail-container">
+            <h2 class="fail-text">Rimandato alla prossima quinta 😢</h2>
+            <button onclick="retryQuiz()">Riprova il Quiz</button>
+        </div>
+
+        <script>
+            function retryQuiz(){
+            localStorage.removeItem("score");
+            window.location.href="quiz.html";
+            }
+        </script>
+    </body>
+</html>
